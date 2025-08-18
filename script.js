@@ -1,6 +1,5 @@
 
 function toggleMenu(){ document.querySelector('.menu').classList.toggle('open'); }
-
 function validateForm(e){
   const form = e.target;
   const name = form.querySelector('[name="name"]').value.trim();
