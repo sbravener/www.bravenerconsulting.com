@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bravenerconsulting.com/sitemap.xml
