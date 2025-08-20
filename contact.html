@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bravener Consulting — Managed Apple & Windows endpoints — secure, patched, compliant.</title>
+  <meta name="description" content="Managed Apple & Windows endpoints — secure, patched, compliant.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="nav">
+  <div class="container nav-container">
+    <a class="logo" href="index.html">Bravener Consulting</a>
+    <button aria-label="Toggle menu" class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <ul id="menu" class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="plans.html">Plans & Pricing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<header class="subhero">
+  <div class="container">
+    <h1>Contact</h1>
+    <p class="lead">Tell us about your environment — we’ll recommend the right plan.</p>
+  </div>
+</header>
+
+<main class="container">
+  <section class="card">
+    <h2>Get in touch</h2>
+    <p><strong>Phone:</strong> (206) 954-4900<br>
+       <strong>Email:</strong> <a href="mailto:Sean@bravenerconsulting.com">Sean@bravenerconsulting.com</a><br>
+       <strong>Address:</strong> 205 Fairway Dr, Lexington, NC 27292</p>
+    <form class="contact-form" action="mailto:Sean@bravenerconsulting.com" method="post" enctype="text/plain">
+      <div class="grid-form">
+        <label>Full Name
+          <input type="text" name="name" placeholder="Jane Doe" required>
+        </label>
+        <label>Company
+          <input type="text" name="company" placeholder="Acme Co.">
+        </label>
+        <label>Email
+          <input type="email" name="email" placeholder="you@company.com" required>
+        </label>
+        <label>Phone
+          <input type="tel" name="phone" placeholder="(555) 123‑4567">
+        </label>
+      </div>
+      <label>What can we help with?
+        <textarea name="message" rows="6" placeholder="e.g., Manage 75 Macs and 40 PCs across two offices"></textarea>
+      </label>
+      <button class="btn" type="submit">Send</button>
+    </form>
+    <p class="muted tiny">Submitting opens your email client with a prefilled draft to Sean@bravenerconsulting.com.</p>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>Bravener Consulting</h4>
+      <p>Managed Apple & Windows endpoints — secure, patched, compliant.</p>
+      <p><strong>Phone:</strong> (206) 954-4900<br>
+      <strong>Email:</strong> <a href="mailto:Sean@bravenerconsulting.com">Sean@bravenerconsulting.com</a><br>
+      <strong>Address:</strong> 205 Fairway Dr, Lexington, NC 27292</p>
+    </div>
+    <div>
+      <h4>Pages</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="plans.html">Plans & Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="services.html#intune">Microsoft Intune</a></li>
+        <li><a href="services.html#jamf">Jamf Pro</a></li>
+        <li><a href="plans.html#hourly">Hourly & Projects</a></li>
+        <li><a href="plans.html#tiers">Management Tiers</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container tiny">
+    <p>&copy; <span id="year"></span> Bravener Consulting. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
+
