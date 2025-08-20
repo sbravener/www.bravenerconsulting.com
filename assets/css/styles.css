@@ -11,6 +11,7 @@ a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
 .nav{background:rgba(10,14,18,.7);backdrop-filter:blur(10px);position:sticky;top:0;z-index:50;border-bottom:1px solid var(--border)}
 .nav-container{display:flex;align-items:center;justify-content:space-between;min-height:64px}
 .logo{font-weight:700;color:var(--text);font-size:1.05rem}
+.logo-img{height:28px;width:auto;display:block}
 .menu{display:flex;gap:22px;list-style:none;margin:0;padding:0}
 .menu a{color:var(--text);opacity:.9} .menu a:hover{opacity:1}
 .menu-toggle{display:none;background:transparent;border:1px solid var(--border);color:var(--text);padding:6px 10px;border-radius:10px}
