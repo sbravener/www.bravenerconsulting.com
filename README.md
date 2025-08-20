@@ -7,24 +7,27 @@ This repository contains a static website for a Windows & Mac MSP featuring:
 - Hourly billing for unmanaged/project work
 - Flat‑rate project option
 
-## Run Locally
-You can open `index.html` directly in your browser.
-
 ## Deploy on GitHub Pages
-1. Create a new GitHub repository and push these files.
-2. In **Settings → Pages**, choose:
+**Option A: Simple (no build, no custom domain)**
+1. Create a new GitHub repository.
+2. Upload these files to the root of the repo (keep `.nojekyll`).
+3. Go to **Settings → Pages** and choose:
    - **Source:** Deploy from a branch
-   - **Branch:** `main` (or `master`) & `/ (root)`
-3. Save. Your site will be published at `https://<your-username>.github.io/<repo>/`.
+   - **Branch:** `main` (or `master`) and `/ (root)`
+4. Save. Your site will publish at `https://<your-username>.github.io/<repo>/`.
 
-> If you're using a custom domain, add it under **Pages → Custom Domain** and create the appropriate DNS `CNAME` record.
+**Option B: Custom domain**
+1. Set DNS for your domain to point to GitHub Pages.
+2. Rename `CNAME.example` to `CNAME` and put your domain inside (e.g., `example.com`).
+3. In **Settings → Pages**, set the custom domain to match.
 
-## Customization
-- Update text in the HTML files to match your branding.
-- Adjust pricing in `plans.html`.
-- Colors and layout are controlled in `assets/css/styles.css`.
+## Notes
+- `404.html` provides a friendly not-found page.
+- `robots.txt` and `sitemap.xml` are included for SEO basics.
+- `assets/icons/favicon.svg` is referenced in `<head>` as the site icon.
+- `.nojekyll` ensures GitHub serves files as-is.
 
-## Contact Info
-- Phone: (206) 954-4900
-- Email: Sean@bravenerconsulting.com
-- Address: 205 Fairway Dr, Lexington, NC 27292
+## Customize
+- Update pricing in `plans.html`.
+- Edit branding, copy, and contact details in the HTML files.
+- Tweak styles in `assets/css/styles.css`.
