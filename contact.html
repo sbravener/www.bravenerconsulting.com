@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact Bravener Consulting (Charlotte, NC)</title>
-  <meta name="description" content="Contact Bravener Consulting — Apple & Windows management for dental, medical, legal, manufacturing, and professional services in Charlotte.">
+  <meta name="description" content="Contact Bravener Consulting — Apple & Windows management for modern teams in Charlotte.">
   <meta name="theme-color" content="#0b0f11">
   <meta name="keywords" content="Charlotte managed IT, Apple management, Jamf Pro, Windows management, Microsoft Intune, MSP Charlotte NC, endpoint management, dental IT, medical IT, legal IT, manufacturing IT, professional services IT">
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -19,30 +19,31 @@
   <link rel="canonical" href="https://bravenerconsulting.com/contact.html">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Contact Bravener Consulting (Charlotte, NC)">
-  <meta property="og:description" content="Contact Bravener Consulting — Apple & Windows management for dental, medical, legal, manufacturing, and professional services in Charlotte.">
+  <meta property="og:description" content="Contact Bravener Consulting — Apple & Windows management for modern teams in Charlotte.">
   <meta property="og:url" content="https://bravenerconsulting.com/contact.html">
   <meta property="og:image" content="https://bravenerconsulting.com/assets/icons/og-1200x630.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Contact Bravener Consulting (Charlotte, NC)">
-  <meta name="twitter:description" content="Contact Bravener Consulting — Apple & Windows management for dental, medical, legal, manufacturing, and professional services in Charlotte.">
+  <meta name="twitter:description" content="Contact Bravener Consulting — Apple & Windows management for modern teams in Charlotte.">
   <meta name="twitter:image" content="https://bravenerconsulting.com/assets/icons/og-1200x630.png">
 </head>
 <body>
 <nav class="nav">
   <div class="container nav-container">
     <a class="logo" href="index.html" aria-label="Bravener Consulting Home"><img src="assets/brand/bravener-horizontal.svg" alt="Bravener Consulting" class="logo-img"></a>
-    <button aria-label="Toggle menu" class="menu-toggle" onclick="toggleMenu()">☰</button>
     <ul id="menu" class="menu">
       <li><a href="index.html">Home</a></li>
       <li><a href="services.html">Services</a></li>
+      <li><a href="industries.html">Industries</a></li>
       <li><a href="plans.html">Plans & Pricing</a></li>
       <li><a href="smarthome.html">Smart Home</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>
 </nav>
-<header class="subhero"><div class="container"><h1>Contact</h1><p class="lead">We work with dental, medical, legal, industrial, and professional teams. Tell us about your environment — we’ll recommend the right plan.</p></div></header>
-<main class="container"><section class="card"><h2>Get in touch</h2><p><strong>Phone:</strong> (206) 954-4900<br><strong>Email:</strong> <a href="mailto:Sean@bravenerconsulting.com">Sean@bravenerconsulting.com</a><br><strong>Address:</strong> 205 Fairway Dr, Lexington, NC 27292</p></section></main><footer class="footer">
+<header class="hero"><div class="container"><h1>Contact</h1><p>Tell us about your environment — we’ll recommend the right plan.</p></div></header>
+<main class="container"><section class="card"><h2>Get in touch</h2><p><strong>Phone:</strong> (206) 954-4900<br><strong>Email:</strong> <a href="mailto:Sean@bravenerconsulting.com">Sean@bravenerconsulting.com</a><br><strong>Address:</strong> 205 Fairway Dr, Lexington, NC 27292</p><p class="tiny muted">By contacting us, you agree to the terms in our <a href="privacy.html">Privacy Policy</a>.</p></section></main>
+<footer class="footer">
   <div class="container footer-grid">
     <div>
       <h4>Bravener Consulting</h4>
@@ -56,9 +57,11 @@
       <ul class="footer-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
+        <li><a href="industries.html">Industries</a></li>
         <li><a href="plans.html">Plans & Pricing</a></li>
         <li><a href="smarthome.html">Smart Home</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
       </ul>
     </div>
     <div>
@@ -75,6 +78,8 @@
     <p>&copy; <span id="year"></span> Bravener Consulting. All rights reserved.</p>
   </div>
 </footer>
-<script src="assets/js/main.js"></script>
+<script>
+const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+</script>
 </body>
 </html>

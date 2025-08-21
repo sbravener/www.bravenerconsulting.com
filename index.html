@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Managed Apple & Windows IT | Bravener Consulting (Charlotte, NC)</title>
-  <meta name="description" content="Apple (Jamf) & Windows (Intune) management for dental, medical, legal, manufacturing, and professional services — baselines, patching, onboarding, and compliance in Charlotte.">
+  <meta name="description" content="Apple (Jamf) & Windows (Intune) management plus predictable pricing — secure baselines, patching, onboarding, and compliance in Charlotte.">
   <meta name="theme-color" content="#0b0f11">
   <meta name="keywords" content="Charlotte managed IT, Apple management, Jamf Pro, Windows management, Microsoft Intune, MSP Charlotte NC, endpoint management, dental IT, medical IT, legal IT, manufacturing IT, professional services IT">
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -19,44 +19,34 @@
   <link rel="canonical" href="https://bravenerconsulting.com/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Managed Apple & Windows IT | Bravener Consulting (Charlotte, NC)">
-  <meta property="og:description" content="Apple (Jamf) & Windows (Intune) management for dental, medical, legal, manufacturing, and professional services — baselines, patching, onboarding, and compliance in Charlotte.">
+  <meta property="og:description" content="Apple (Jamf) & Windows (Intune) management plus predictable pricing — secure baselines, patching, onboarding, and compliance in Charlotte.">
   <meta property="og:url" content="https://bravenerconsulting.com/">
   <meta property="og:image" content="https://bravenerconsulting.com/assets/icons/og-1200x630.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Managed Apple & Windows IT | Bravener Consulting (Charlotte, NC)">
-  <meta name="twitter:description" content="Apple (Jamf) & Windows (Intune) management for dental, medical, legal, manufacturing, and professional services — baselines, patching, onboarding, and compliance in Charlotte.">
+  <meta name="twitter:description" content="Apple (Jamf) & Windows (Intune) management plus predictable pricing — secure baselines, patching, onboarding, and compliance in Charlotte.">
   <meta name="twitter:image" content="https://bravenerconsulting.com/assets/icons/og-1200x630.png">
 </head>
 <body>
 <nav class="nav">
   <div class="container nav-container">
     <a class="logo" href="index.html" aria-label="Bravener Consulting Home"><img src="assets/brand/bravener-horizontal.svg" alt="Bravener Consulting" class="logo-img"></a>
-    <button aria-label="Toggle menu" class="menu-toggle" onclick="toggleMenu()">☰</button>
     <ul id="menu" class="menu">
       <li><a href="index.html">Home</a></li>
       <li><a href="services.html">Services</a></li>
+      <li><a href="industries.html">Industries</a></li>
       <li><a href="plans.html">Plans & Pricing</a></li>
       <li><a href="smarthome.html">Smart Home</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>
 </nav>
-<header class="hero">
-  <div class="container">
-    <h1>Simple, predictable endpoint management</h1>
-    <p class="lead">We manage Apple and Windows fleets with best‑practice baselines, zero‑touch onboarding, and real‑time compliance — powered by Jamf Pro and Microsoft Intune.</p>
-    <p><a class="btn" href="plans.html">See plans & pricing</a></p>
-  </div>
-</header>
-
+<header class="hero"><div class="container"><h1>Simple, predictable endpoint management</h1><p class="lead">Jamf Pro for Apple + Microsoft Intune for Windows. Baselines, patching, onboarding, and compliance — done right.</p><p><a class="btn" href="plans.html">See plans & pricing</a> <a class="btn" href="industries.html" style="margin-left:8px">Industries we serve</a></p></div></header>
 <section class="container tiles">
-  <article class="tile"><h3>Dental Practices</h3><p>HIPAA‑aware workflows, imaging & practice apps, secure backups, and policy baselines fit for front desk & operatories.</p></article>
-  <article class="tile"><h3>Medical Clinics</h3><p>EHR endpoints, identity & MFA, MDM enrollments, update rings, and reporting that supports HIPAA compliance.</p></article>
-  <article class="tile"><h3>Legal Firms</h3><p>Encrypted devices, managed identities, DLP‑friendly controls, secure file workflows, and clean onboarding/offboarding.</p></article>
-  <article class="tile"><h3>Industrial / Manufacturing</h3><p>Shop‑floor endpoints, kiosk/line‑of‑business devices, OT‑friendly segmentation, rugged device lifecycle.</p></article>
-  <article class="tile"><h3>Professional Services</h3><p>Finance, creative, architecture — SSO, app packaging, and reliable Mac/PC support built for teams that move fast.</p></article>
+  <article class="tile"><h3>Microsoft Intune for Windows</h3><p>Security baselines, BitLocker, Defender, update rings, and compliance — with minimal user friction.</p><a class="link" href="services.html#intune">Learn about Intune →</a></article>
+  <article class="tile"><h3>Jamf Pro for Apple</h3><p>ADE zero‑touch, profiles, patch policies, Self Service, and FileVault — aligned to Apple guidance.</p><a class="link" href="services.html#jamf">Jamf services →</a></article>
+  <article class="tile"><h3>Predictable Pricing</h3><p>Per‑device tiers by platform, hourly for unmanaged work, and flat‑rate for bigger projects.</p><a class="link" href="plans.html">View tiers →</a></article>
 </section>
-
 <footer class="footer">
   <div class="container footer-grid">
     <div>
@@ -71,9 +61,11 @@
       <ul class="footer-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
+        <li><a href="industries.html">Industries</a></li>
         <li><a href="plans.html">Plans & Pricing</a></li>
         <li><a href="smarthome.html">Smart Home</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
       </ul>
     </div>
     <div>
@@ -148,6 +140,8 @@
 }
 </script>
 
-<script src="assets/js/main.js"></script>
+<script>
+const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+</script>
 </body>
 </html>

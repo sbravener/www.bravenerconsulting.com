@@ -31,16 +31,16 @@
 <nav class="nav">
   <div class="container nav-container">
     <a class="logo" href="index.html" aria-label="Bravener Consulting Home"><img src="assets/brand/bravener-horizontal.svg" alt="Bravener Consulting" class="logo-img"></a>
-    <button aria-label="Toggle menu" class="menu-toggle" onclick="toggleMenu()">☰</button>
     <ul id="menu" class="menu">
       <li><a href="index.html">Home</a></li>
       <li><a href="services.html">Services</a></li>
+      <li><a href="industries.html">Industries</a></li>
       <li><a href="plans.html">Plans & Pricing</a></li>
       <li><a href="smarthome.html">Smart Home</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>
-</nav><main class="container" style="padding:60px 0 80px"><section class="card"><h1>404 — Page not found</h1><p class="lead">Sorry, we can’t find that page. Try the links below.</p><p><a class="btn" href="index.html">Back to Home</a></p></section></main><footer class="footer">
+</nav><main class="container" style="padding:60px 0 80px"><section class="card"><h1>404 — Page not found</h1><p class="lead">Try the links below.</p><ul class="footer-links"><li><a href="services.html">Services</a></li><li><a href="industries.html">Industries</a></li><li><a href="plans.html">Plans & Pricing</a></li><li><a href="smarthome.html">Smart Home</a></li><li><a href="contact.html">Contact</a></li><li><a href="privacy.html">Privacy Policy</a></li></ul></section></main><footer class="footer">
   <div class="container footer-grid">
     <div>
       <h4>Bravener Consulting</h4>
@@ -54,9 +54,11 @@
       <ul class="footer-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
+        <li><a href="industries.html">Industries</a></li>
         <li><a href="plans.html">Plans & Pricing</a></li>
         <li><a href="smarthome.html">Smart Home</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
       </ul>
     </div>
     <div>
@@ -73,6 +75,8 @@
     <p>&copy; <span id="year"></span> Bravener Consulting. All rights reserved.</p>
   </div>
 </footer>
-<script src="assets/js/main.js"></script>
+<script>
+const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+</script>
 </body>
 </html>
