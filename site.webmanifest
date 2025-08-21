@@ -3,8 +3,8 @@
   "short_name": "Bravener",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0b0f11",
-  "theme_color": "#0b0f11",
+  "background_color": "#05130a",
+  "theme_color": "#05130a",
   "icons": [
     {
       "src": "assets/icons/icon-192.png",
