@@ -1,363 +1,90 @@
-<!-- FILE: index.html -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Managed IT & Cybersecurity Services | Bravener Consulting – Lexington NC</title>
-  <meta name="description" content="Professional managed IT services, cybersecurity, and Apple/Jamf device management for small and midsize businesses in Lexington, NC and surrounding areas." />
-  <link rel="canonical" href="https://bravenerconsulting.com/" />
-
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Managed IT & Cybersecurity Services | Bravener Consulting – Lexington NC" />
-  <meta property="og:description" content="Managed IT services, cybersecurity, and Apple/Jamf device management for businesses in Lexington, NC." />
-  <meta property="og:url" content="https://bravenerconsulting.com/" />
-  <meta property="og:site_name" content="Bravener Consulting Service" />
-
-  <meta name="twitter:card" content="summary" />
-
-  <style>
-    :root{
-      --green:#0f3d2e;
-      --green2:#155a43;
-      --text:#0b1220;
-      --muted:#4a5568;
-      --bg:#ffffff;
-      --card:#f7fafc;
-      --border:#e2e8f0;
-      --shadow: 0 12px 30px rgba(11, 18, 32, .08);
-      --radius: 18px;
-      --max: 1120px;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      color:var(--text);
-      background:var(--bg);
-      line-height:1.6;
-    }
-    a{color:var(--green2); text-decoration:none}
-    a:hover{text-decoration:underline}
-    .wrap{max-width:var(--max); margin:0 auto; padding:0 18px}
-    header{
-      position:sticky; top:0; z-index:20;
-      background:rgba(255,255,255,.92);
-      backdrop-filter:saturate(180%) blur(10px);
-      border-bottom:1px solid var(--border);
-    }
-    .topbar{
-      display:flex; align-items:center; justify-content:space-between;
-      padding:14px 0;
-      gap:14px;
-    }
-    .brand{
-      display:flex; align-items:center; gap:12px;
-      min-width:240px;
-    }
-    .logo{
-      width:42px; height:42px; border-radius:12px;
-      background:linear-gradient(135deg,var(--green),#1f7a5b);
-      box-shadow: var(--shadow);
-    }
-    .brand strong{
-      font-size:15px; letter-spacing:.4px;
-      text-transform:uppercase;
-      color:var(--green);
-      display:block;
-      line-height:1.15;
-    }
-    .brand span{
-      font-size:12.5px; color:var(--muted);
-    }
-    nav{
-      display:flex; flex-wrap:wrap; gap:10px 14px;
-      justify-content:flex-end;
-      font-size:14px;
-    }
-    nav a{
-      padding:8px 10px;
-      border-radius:12px;
-    }
-    nav a[aria-current="page"]{
-      background:rgba(15,61,46,.10);
-      color:var(--green);
-      font-weight:600;
-    }
-    .hero{
-      padding:48px 0 22px;
-      background:
-        radial-gradient(900px 420px at 20% 10%, rgba(15,61,46,.12), transparent 70%),
-        radial-gradient(700px 420px at 90% 0%, rgba(31,122,91,.10), transparent 60%);
-    }
-    .hero-grid{
-      display:grid;
-      grid-template-columns: 1.2fr .8fr;
-      gap:22px;
-      align-items:stretch;
-    }
-    @media (max-width: 900px){
-      .hero-grid{grid-template-columns:1fr}
-      nav{justify-content:flex-start}
-      .brand{min-width:auto}
-    }
-    .hero h1{
-      margin:0 0 12px;
-      font-size: clamp(28px, 3.6vw, 44px);
-      line-height:1.15;
-      letter-spacing:-.5px;
-    }
-    .hero p{margin:0 0 14px; color:var(--muted); font-size:16.5px; max-width:64ch}
-    .cta-row{display:flex; flex-wrap:wrap; gap:12px; margin-top:18px}
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center;
-      padding:11px 14px;
-      border-radius:14px;
-      border:1px solid var(--border);
-      background:#fff;
-      box-shadow: 0 8px 22px rgba(11,18,32,.06);
-      font-weight:600;
-      font-size:14.5px;
-      text-decoration:none !important;
-    }
-    .btn.primary{
-      background:linear-gradient(135deg,var(--green),var(--green2));
-      border-color:transparent;
-      color:#fff;
-    }
-    .btn:focus{outline:3px solid rgba(21,90,67,.25); outline-offset:2px}
-    .panel{
-      background:#fff;
-      border:1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding:18px;
-      height:100%;
-    }
-    .panel h2{margin:0 0 8px; font-size:16px; color:var(--green)}
-    .panel ul{margin:0; padding-left:18px; color:var(--muted)}
-    .grid{
-      display:grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap:14px;
-      padding:20px 0 34px;
-    }
-    @media (max-width: 920px){.grid{grid-template-columns:1fr}}
-    .card{
-      background:var(--card);
-      border:1px solid var(--border);
-      border-radius: var(--radius);
-      padding:18px;
-    }
-    .card h3{margin:0 0 8px; font-size:16px}
-    .card p{margin:0; color:var(--muted)}
-    section{padding:12px 0}
-    .section-title{
-      margin:0 0 10px;
-      font-size:22px;
-      letter-spacing:-.2px;
-    }
-    .two{
-      display:grid; grid-template-columns: 1fr 1fr; gap:14px;
-    }
-    @media (max-width: 920px){.two{grid-template-columns:1fr}}
-    .callout{
-      background: linear-gradient(135deg, rgba(15,61,46,.12), rgba(31,122,91,.08));
-      border:1px solid rgba(15,61,46,.18);
-      border-radius: var(--radius);
-      padding:18px;
-      display:flex; flex-direction:column; gap:10px;
-    }
-    .callout strong{color:var(--green); font-size:16px}
-    footer{
-      border-top:1px solid var(--border);
-      padding:22px 0;
-      color:var(--muted);
-      font-size:13.5px;
-      background:#fff;
-    }
-    .footgrid{
-      display:grid; grid-template-columns:1.2fr .8fr; gap:14px;
-      align-items:start;
-    }
-    @media (max-width: 900px){.footgrid{grid-template-columns:1fr}}
-    .small{font-size:12.5px}
-    .pill{
-      display:inline-flex; gap:8px; align-items:center;
-      padding:6px 10px;
-      border-radius:999px;
-      border:1px solid var(--border);
-      background:#fff;
-      color:var(--muted);
-      font-size:12.5px;
-      margin-right:8px;
-      margin-top:8px;
-    }
-  </style>
-
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"LocalBusiness",
-    "name":"Bravener Consulting Service",
-    "url":"https://bravenerconsulting.com",
-    "address":{
-      "@type":"PostalAddress",
-      "streetAddress":"205 Fairway",
-      "addressLocality":"Lexington",
-      "addressRegion":"NC",
-      "postalCode":"27292",
-      "addressCountry":"US"
-    },
-    "telephone":"{{PHONE}}",
-    "email":"{{EMAIL}}",
-    "areaServed":[
-      {"@type":"City","name":"Lexington"},
-      {"@type":"AdministrativeArea","name":"Davidson County"}
-    ],
-    "description":"Managed IT services, cybersecurity, and Apple/Jamf device management for small and midsize businesses in Lexington, North Carolina.",
-    "sameAs":[]
-  }
-  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Managed Apple & Windows IT | Bravener Consulting (Charlotte, NC)</title>
+  <meta name="description" content="Apple (Jamf) & Windows (Intune) management plus predictable pricing — secure baselines, patching, onboarding, and compliance in Charlotte.">
+  <meta name="theme-color" content="#05130a">
+  <meta name="keywords" content="Charlotte managed IT, Apple management, Jamf Pro, Windows management, Microsoft Intune, MSP Charlotte NC, endpoint management, dental IT, medical IT, legal IT, manufacturing IT, professional services IT">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16.png">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="{site['domain']}/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Managed Apple & Windows IT | Bravener Consulting (Charlotte, NC)">
+  <meta property="og:description" content="Apple (Jamf) & Windows (Intune) management plus predictable pricing — secure baselines, patching, onboarding, and compliance in Charlotte.">
+  <meta property="og:url" content="{site['domain']}/">
+  <meta property="og:image" content="https://bravenerconsulting.com/assets/icons/og-1200x630.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Managed Apple & Windows IT | Bravener Consulting (Charlotte, NC)">
+  <meta name="twitter:description" content="Apple (Jamf) & Windows (Intune) management plus predictable pricing — secure baselines, patching, onboarding, and compliance in Charlotte.">
+  <meta name="twitter:image" content="https://bravenerconsulting.com/assets/icons/og-1200x630.png">
 </head>
-
 <body>
-<header>
-  <div class="wrap">
-    <div class="topbar">
-      <div class="brand">
-        <div class="logo" aria-hidden="true"></div>
-        <div>
-          <strong>Bravener Consulting Service</strong>
-          <span>Managed IT • Cybersecurity • Apple/Jamf</span>
-        </div>
-      </div>
-      <nav aria-label="Primary">
-        <a href="/" aria-current="page">Home</a>
-        <a href="/managed-it-services-lexington-nc.html">Managed IT</a>
-        <a href="/cybersecurity-services-lexington-nc.html">Cybersecurity</a>
-        <a href="/apple-it-support-jamf-msp.html">Apple &amp; Jamf</a>
-        <a href="/cloud-server-it-support.html">Cloud &amp; Servers</a>
-        <a href="/about.html">About</a>
-        <a href="/contact.html">Contact</a>
-      </nav>
+<nav class="nav">
+  <div class="container nav-container">
+    <a class="logo" href="index.html" aria-label="Bravener Consulting Home">
+      <img src="assets/brand/bcs-logo.svg" alt="Bravener Consulting" class="logo-img">
+    </a>
+    <ul id="menu" class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="industries.html">Industries</a></li>
+      <li><a href="plans.html">Plans & Pricing</a></li>
+      <li><a href="smarthome.html">Smart Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<header class="hero"><div class="container"><h1>Simple, predictable endpoint management</h1><p class="lead">Jamf Pro for Apple + Microsoft Intune for Windows. Baselines, patching, onboarding, and compliance — done right.</p><p><a class="btn" href="plans.html">See plans & pricing</a></p></div></header>
+<section class="container tiles">
+  <article class="tile"><h3>Microsoft Intune for Windows</h3><p>Security baselines, BitLocker, Defender, update rings, and compliance — with minimal user friction.</p><a class="link" href="services.html#intune">Learn about Intune →</a></article>
+  <article class="tile"><h3>Jamf Pro for Apple</h3><p>ADE zero‑touch, profiles, patch policies, Self Service, and FileVault — aligned to Apple guidance.</p><a class="link" href="services.html#jamf">Jamf services →</a></article>
+  <article class="tile"><h3>Predictable Pricing</h3><p>Per‑device tiers by platform, hourly for unmanaged work, and flat‑rate for bigger projects.</p><a class="link" href="plans.html">View tiers →</a></article>
+</section>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>Bravener Consulting</h4>
+      <p>Managed Apple & Windows endpoints — secure, patched, compliant.</p>
+      <p><strong>Phone:</strong> (206) 954-4900<br>
+      <strong>Email:</strong> <a href="mailto:Sean@bravenerconsulting.com">Sean@bravenerconsulting.com</a><br>
+      <strong>Address:</strong> 205 Fairway Dr, Lexington, NC 27292</p>
+    </div>
+    <div>
+      <h4>Pages</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="industries.html">Industries</a></li>
+        <li><a href="plans.html">Plans & Pricing</a></li>
+        <li><a href="smarthome.html">Smart Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="services.html#intune">Microsoft Intune</a></li>
+        <li><a href="services.html#jamf">Jamf Pro</a></li>
+        <li><a href="plans.html#hourly">Hourly & Projects</a></li>
+        <li><a href="plans.html#tiers">Management Tiers</a></li>
+      </ul>
     </div>
   </div>
-</header>
-
-<main>
-  <div class="hero">
-    <div class="wrap">
-      <div class="hero-grid">
-        <div>
-          <h1>Managed IT Services &amp; Cybersecurity for Growing Businesses</h1>
-          <p>
-            Technology should help your business move faster — not slow you down. Bravener Consulting Service provides
-            proactive managed IT support, cybersecurity protection, and Apple/Jamf device management for small and midsize
-            organizations in <strong>Lexington, North Carolina</strong> and surrounding areas.
-          </p>
-
-          <div class="cta-row">
-            <a class="btn primary" href="/contact.html">Request a Consultation</a>
-            <a class="btn" href="tel:{{PHONE}}">Call {{PHONE}}</a>
-            <a class="btn" href="/managed-it-services-lexington-nc.html">Explore Managed IT</a>
-          </div>
-
-          <div class="pill">Fast response</div>
-          <div class="pill">Proactive monitoring</div>
-          <div class="pill">Security-first</div>
-          <div class="pill">Apple/Jamf specialists</div>
-        </div>
-
-        <aside class="panel" aria-label="Service Highlights">
-          <h2>What we help with</h2>
-          <ul>
-            <li>IT support and helpdesk for employees</li>
-            <li>Network, server, and workstation management</li>
-            <li>Security hardening, patching, and monitoring</li>
-            <li>Backups and disaster recovery planning</li>
-            <li>Apple device management with Jamf</li>
-            <li>Cloud and Microsoft 365 support</li>
-          </ul>
-        </aside>
-      </div>
-
-      <div class="grid" aria-label="Primary services">
-        <div class="card">
-          <h3>Reliable IT Support</h3>
-          <p>Proactive monitoring, helpdesk support, and maintenance that reduces downtime and keeps teams productive.</p>
-          <p><a href="/managed-it-services-lexington-nc.html">Managed IT services →</a></p>
-        </div>
-        <div class="card">
-          <h3>Cybersecurity Protection</h3>
-          <p>Layered defenses to protect endpoints, email, networks, and critical business data from modern threats.</p>
-          <p><a href="/cybersecurity-services-lexington-nc.html">Cybersecurity services →</a></p>
-        </div>
-        <div class="card">
-          <h3>Apple &amp; Jamf Expertise</h3>
-          <p>Specialized support for Macs, iPhones, and iPads — with secure deployment and management using Jamf.</p>
-          <p><a href="/apple-it-support-jamf-msp.html">Apple &amp; Jamf services →</a></p>
-        </div>
-      </div>
-
-      <section>
-        <h2 class="section-title">Local IT Support in Lexington, North Carolina</h2>
-        <div class="two">
-          <div class="card">
-            <h3>Personal service, local partner</h3>
-            <p>
-              Working with a local IT provider means responsive support and guidance that fits how your business actually operates.
-              We serve Lexington and nearby communities with a focus on stability, security, and long-term IT planning.
-            </p>
-          </div>
-          <div class="card">
-            <h3>Designed for small &amp; midsize business</h3>
-            <p>
-              We help businesses standardize devices, simplify onboarding/offboarding, reduce security risk, and plan IT budgets.
-              Whether you need a full IT department or an expert partner for specific projects, we can help.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="callout">
-          <strong>Ready for dependable, secure IT support?</strong>
-          <div>
-            Let’s talk about your environment, priorities, and budget — and build a plan that keeps your business moving.
-          </div>
-          <div class="cta-row">
-            <a class="btn primary" href="/contact.html">Contact Us</a>
-            <a class="btn" href="mailto:{{EMAIL}}">Email {{EMAIL}}</a>
-          </div>
-        </div>
-      </section>
-    </div>
+  <div class="container tiny">
+    <p>&copy; <span id="year"></span> Bravener Consulting. All rights reserved. · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
   </div>
-</main>
-
-<footer>
-  <div class="wrap">
-    <div class="footgrid">
-      <div>
-        <strong style="color:var(--green)">Bravener Consulting Service</strong><br />
-        205 Fairway, Lexington, NC 27292<br />
-        <a href="tel:{{PHONE}}">{{PHONE}}</a> • <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>
-        <div class="small" style="margin-top:10px;">
-          Managed IT Services • Cybersecurity • Apple/Jamf • Cloud &amp; Server Support
-        </div>
-      </div>
-      <div>
-        <div><a href="/managed-it-services-lexington-nc.html">Managed IT</a></div>
-        <div><a href="/cybersecurity-services-lexington-nc.html">Cybersecurity</a></div>
-        <div><a href="/apple-it-support-jamf-msp.html">Apple &amp; Jamf</a></div>
-        <div><a href="/cloud-server-it-support.html">Cloud &amp; Servers</a></div>
-        <div><a href="/about.html">About</a> • <a href="/contact.html">Contact</a></div>
-      </div>
-    </div>
-    <div class="small" style="margin-top:16px;">© <span id="y"></span> Bravener Consulting Service. All rights reserved.</div>
-  </div>
-  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
 </footer>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
