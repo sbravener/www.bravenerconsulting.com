@@ -1,363 +1,442 @@
-<!-- FILE: index.html -->
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Managed IT & Cybersecurity Services | Bravener Consulting – Lexington NC</title>
-  <meta name="description" content="Professional managed IT services, cybersecurity, and Apple/Jamf device management for small and midsize businesses in Lexington, NC and surrounding areas." />
-  <link rel="canonical" href="https://bravenerconsulting.com/" />
-
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Managed IT Services in Central NC | Bravener Consulting Service</title>
+  <meta name="description" content="Managed IT, cloud services, cybersecurity, and small business IT support serving Central North Carolina including Davidson County and Forsyth County." />
+  <meta name="keywords" content="managed it central nc, it support lexington nc, davidson county it, forsyth county it, small business it, cloud services, cybersecurity" />
+  <link rel="canonical" href="https://bravenerconsulting.com/index.html" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Managed IT & Cybersecurity Services | Bravener Consulting – Lexington NC" />
-  <meta property="og:description" content="Managed IT services, cybersecurity, and Apple/Jamf device management for businesses in Lexington, NC." />
-  <meta property="og:url" content="https://bravenerconsulting.com/" />
-  <meta property="og:site_name" content="Bravener Consulting Service" />
-
-  <meta name="twitter:card" content="summary" />
-
+  <meta property="og:title" content="Managed IT Services in Central NC | Bravener Consulting Service" />
+  <meta property="og:description" content="Managed IT, cloud services, cybersecurity, and small business IT support serving Central North Carolina including Davidson County and Forsyth County." />
+  <meta property="og:url" content="https://bravenerconsulting.com/index.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#071F17" />
   <style>
-    :root{
-      --green:#0f3d2e;
-      --green2:#155a43;
-      --text:#0b1220;
-      --muted:#4a5568;
-      --bg:#ffffff;
-      --card:#f7fafc;
-      --border:#e2e8f0;
-      --shadow: 0 12px 30px rgba(11, 18, 32, .08);
+    :root {
+      --bg: #060A0D;
+      --panel: rgba(255,255,255,.06);
+      --panel2: rgba(255,255,255,.08);
+      --border: rgba(255,255,255,.12);
+      --text: rgba(255,255,255,.92);
+      --muted: rgba(255,255,255,.72);
+      --muted2: rgba(255,255,255,.60);
+      --brand: #25C08B;
+      --brand2: #0E5A40;
+      --shadow: 0 14px 38px rgba(0,0,0,.55);
+      --shadow2: 0 10px 26px rgba(0,0,0,.45);
       --radius: 18px;
-      --max: 1120px;
     }
-    *{box-sizing:border-box}
-    body{
+
+    * { box-sizing:border-box; }
+    html, body { height:100%; }
+    body {
       margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      color:var(--text);
-      background:var(--bg);
-      line-height:1.6;
-    }
-    a{color:var(--green2); text-decoration:none}
-    a:hover{text-decoration:underline}
-    .wrap{max-width:var(--max); margin:0 auto; padding:0 18px}
-    header{
-      position:sticky; top:0; z-index:20;
-      background:rgba(255,255,255,.92);
-      backdrop-filter:saturate(180%) blur(10px);
-      border-bottom:1px solid var(--border);
-    }
-    .topbar{
-      display:flex; align-items:center; justify-content:space-between;
-      padding:14px 0;
-      gap:14px;
-    }
-    .brand{
-      display:flex; align-items:center; gap:12px;
-      min-width:240px;
-    }
-    .logo{
-      width:42px; height:42px; border-radius:12px;
-      background:linear-gradient(135deg,var(--green),#1f7a5b);
-      box-shadow: var(--shadow);
-    }
-    .brand strong{
-      font-size:15px; letter-spacing:.4px;
-      text-transform:uppercase;
-      color:var(--green);
-      display:block;
-      line-height:1.15;
-    }
-    .brand span{
-      font-size:12.5px; color:var(--muted);
-    }
-    nav{
-      display:flex; flex-wrap:wrap; gap:10px 14px;
-      justify-content:flex-end;
-      font-size:14px;
-    }
-    nav a{
-      padding:8px 10px;
-      border-radius:12px;
-    }
-    nav a[aria-current="page"]{
-      background:rgba(15,61,46,.10);
-      color:var(--green);
-      font-weight:600;
-    }
-    .hero{
-      padding:48px 0 22px;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--text);
       background:
-        radial-gradient(900px 420px at 20% 10%, rgba(15,61,46,.12), transparent 70%),
-        radial-gradient(700px 420px at 90% 0%, rgba(31,122,91,.10), transparent 60%);
+        radial-gradient(1100px 500px at 15% 10%, rgba(37,192,139,.18), transparent 55%),
+        radial-gradient(900px 520px at 80% 0%, rgba(14,90,64,.22), transparent 55%),
+        linear-gradient(180deg, #040607, var(--bg));
+      line-height:1.55;
     }
-    .hero-grid{
-      display:grid;
-      grid-template-columns: 1.2fr .8fr;
-      gap:22px;
-      align-items:stretch;
+
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; text-decoration-color: rgba(37,192,139,.55); }
+
+    header {
+      background:
+        radial-gradient(1100px 500px at 15% 0%, rgba(37,192,139,.22), transparent 55%),
+        radial-gradient(900px 520px at 80% 0%, rgba(14,90,64,.26), transparent 55%),
+        linear-gradient(180deg, #05090C, #071F17);
+      border-bottom: 1px solid var(--border);
     }
-    @media (max-width: 900px){
-      .hero-grid{grid-template-columns:1fr}
-      nav{justify-content:flex-start}
-      .brand{min-width:auto}
+
+    .topbar {
+      max-width:1100px; margin:0 auto; padding:10px 18px;
+      display:flex; gap:14px; justify-content:space-between; flex-wrap:wrap; align-items:center;
+      font-size:14px; color: var(--muted);
     }
-    .hero h1{
-      margin:0 0 12px;
-      font-size: clamp(28px, 3.6vw, 44px);
-      line-height:1.15;
-      letter-spacing:-.5px;
+    .topbar strong { color: var(--text); }
+    .topbar a { color: var(--text); text-decoration: underline; text-decoration-color: rgba(255,255,255,.25); }
+
+    nav {
+      max-width:1100px; margin:0 auto; padding:14px 18px 20px;
+      display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;
     }
-    .hero p{margin:0 0 14px; color:var(--muted); font-size:16.5px; max-width:64ch}
-    .cta-row{display:flex; flex-wrap:wrap; gap:12px; margin-top:18px}
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center;
-      padding:11px 14px;
-      border-radius:14px;
-      border:1px solid var(--border);
-      background:#fff;
-      box-shadow: 0 8px 22px rgba(11,18,32,.06);
-      font-weight:600;
-      font-size:14.5px;
-      text-decoration:none !important;
+
+    .brand { display:flex; align-items:center; gap:12px; }
+    .logo {
+      width:38px; height:38px; border-radius:12px;
+      background: radial-gradient(circle at 30% 30%, rgba(37,192,139,1), rgba(14,90,64,1));
+      box-shadow: 0 10px 26px rgba(0,0,0,.55);
+      border: 1px solid rgba(255,255,255,.18);
     }
-    .btn.primary{
-      background:linear-gradient(135deg,var(--green),var(--green2));
-      border-color:transparent;
-      color:#fff;
+
+    .brand h1 { font-size:18px; margin:0; letter-spacing:.4px; }
+    .brand small { display:block; color: rgba(255,255,255,.72); font-weight:600; }
+
+    .links { display:flex; gap:10px; flex-wrap:wrap; }
+    .links a {
+      color: rgba(255,255,255,.88);
+      font-weight:700; padding:8px 10px; border-radius:12px;
+      border: 1px solid transparent;
     }
-    .btn:focus{outline:3px solid rgba(21,90,67,.25); outline-offset:2px}
-    .panel{
-      background:#fff;
-      border:1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding:18px;
-      height:100%;
+    .links a:hover {
+      background: rgba(255,255,255,.06);
+      border-color: rgba(255,255,255,.10);
+      text-decoration:none;
     }
-    .panel h2{margin:0 0 8px; font-size:16px; color:var(--green)}
-    .panel ul{margin:0; padding-left:18px; color:var(--muted)}
-    .grid{
-      display:grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap:14px;
-      padding:20px 0 34px;
-    }
-    @media (max-width: 920px){.grid{grid-template-columns:1fr}}
-    .card{
-      background:var(--card);
-      border:1px solid var(--border);
-      border-radius: var(--radius);
-      padding:18px;
-    }
-    .card h3{margin:0 0 8px; font-size:16px}
-    .card p{margin:0; color:var(--muted)}
-    section{padding:12px 0}
-    .section-title{
-      margin:0 0 10px;
-      font-size:22px;
-      letter-spacing:-.2px;
-    }
-    .two{
-      display:grid; grid-template-columns: 1fr 1fr; gap:14px;
-    }
-    @media (max-width: 920px){.two{grid-template-columns:1fr}}
-    .callout{
-      background: linear-gradient(135deg, rgba(15,61,46,.12), rgba(31,122,91,.08));
-      border:1px solid rgba(15,61,46,.18);
-      border-radius: var(--radius);
-      padding:18px;
-      display:flex; flex-direction:column; gap:10px;
-    }
-    .callout strong{color:var(--green); font-size:16px}
-    footer{
-      border-top:1px solid var(--border);
-      padding:22px 0;
-      color:var(--muted);
-      font-size:13.5px;
-      background:#fff;
-    }
-    .footgrid{
-      display:grid; grid-template-columns:1.2fr .8fr; gap:14px;
-      align-items:start;
-    }
-    @media (max-width: 900px){.footgrid{grid-template-columns:1fr}}
-    .small{font-size:12.5px}
-    .pill{
+
+    .hero { max-width:1100px; margin:0 auto; padding:26px 18px 34px; }
+    .hero-grid { display:grid; grid-template-columns: 1.2fr .8fr; gap:22px; align-items:stretch; }
+
+    .hero h2 { margin:0 0 10px; font-size:38px; line-height:1.1; }
+    .hero p { margin:0 0 14px; color: var(--muted); font-size:17px; }
+
+    .pill {
       display:inline-flex; gap:8px; align-items:center;
-      padding:6px 10px;
-      border-radius:999px;
-      border:1px solid var(--border);
-      background:#fff;
-      color:var(--muted);
-      font-size:12.5px;
-      margin-right:8px;
-      margin-top:8px;
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.12);
+      color: rgba(255,255,255,.88);
+      padding:8px 12px; border-radius:999px; font-size:13px;
+      backdrop-filter: blur(6px);
+    }
+
+    .cta-row { display:flex; gap:12px; flex-wrap:wrap; margin-top:16px; }
+
+    .btn { display:inline-block; padding:12px 14px; border-radius:14px; font-weight:800; letter-spacing:.2px; }
+    .btn.primary {
+      background: linear-gradient(135deg, rgba(37,192,139,1), rgba(14,90,64,1));
+      color: #03110B;
+      box-shadow: 0 14px 32px rgba(0,0,0,.55);
+    }
+    .btn.primary:hover { filter: brightness(1.05); text-decoration:none; }
+    .btn.ghost {
+      border: 1px solid rgba(255,255,255,.22);
+      color: rgba(255,255,255,.92);
+      background: rgba(255,255,255,.04);
+    }
+    .btn.ghost:hover {
+      background: rgba(255,255,255,.08);
+      text-decoration:none;
+    }
+
+    main { max-width:1100px; margin:0 auto; padding:26px 18px 40px; }
+
+    .card {
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow2);
+      padding:16px;
+      backdrop-filter: blur(8px);
+    }
+    .hero .card {
+      background: rgba(255,255,255,.05);
+      border-color: rgba(255,255,255,.14);
+      box-shadow: var(--shadow);
+    }
+
+    .grid { display:grid; grid-template-columns: repeat(3, 1fr); gap:16px; }
+    .grid-2 { display:grid; grid-template-columns: repeat(2, 1fr); gap:16px; }
+
+    .section-title {
+      display:flex; align-items:flex-end; justify-content:space-between;
+      gap:18px; flex-wrap:wrap; margin:0 0 14px;
+    }
+    .section-title h2 { margin:0; font-size:26px; }
+    .section-title p { margin:0; color: var(--muted2); max-width:58ch; }
+
+    .card h3 { margin:0 0 8px; }
+    .card p { margin:0; color: var(--muted2); }
+
+    .badge {
+      display:inline-block; padding:5px 10px; border-radius:999px;
+      background: rgba(37,192,139,.10);
+      border: 1px solid rgba(37,192,139,.25);
+      color: rgba(255,255,255,.88);
+      font-weight:800; font-size:12px;
+    }
+
+    .callout {
+      background: linear-gradient(135deg, rgba(37,192,139,.10), rgba(255,255,255,.04));
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: var(--radius);
+      padding:16px;
+      box-shadow: var(--shadow2);
+      backdrop-filter: blur(8px);
+    }
+    .callout strong { color: rgba(255,255,255,.92); }
+
+    footer {
+      margin-top: 18px;
+      background: linear-gradient(180deg, #06110C, #030605);
+      color: rgba(255,255,255,.84);
+      border-top: 1px solid rgba(255,255,255,.10);
+    }
+    .footer-inner {
+      max-width:1100px; margin:0 auto; padding:22px 18px;
+      display:grid; grid-template-columns: 1.2fr .8fr; gap:16px;
+    }
+    .footer-inner a { color: rgba(255,255,255,.92); text-decoration: underline; text-decoration-color: rgba(255,255,255,.24); }
+    .fineprint {
+      border-top:1px solid rgba(255,255,255,.10);
+      padding:12px 18px; max-width:1100px; margin:0 auto;
+      color: rgba(255,255,255,.62); font-size:12px;
+    }
+
+    @media (max-width: 920px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .grid { grid-template-columns: 1fr; }
+      .grid-2 { grid-template-columns: 1fr; }
+      .footer-inner { grid-template-columns: 1fr; }
+      .hero h2 { font-size:32px; }
     }
   </style>
-
   <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"LocalBusiness",
-    "name":"Bravener Consulting Service",
-    "url":"https://bravenerconsulting.com",
-    "address":{
-      "@type":"PostalAddress",
-      "streetAddress":"205 Fairway",
-      "addressLocality":"Lexington",
-      "addressRegion":"NC",
-      "postalCode":"27292",
-      "addressCountry":"US"
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Bravener Consulting Service",
+  "url": "https://bravenerconsulting.com",
+  "telephone": "+12069544900",
+  "email": "info@bravenerconsulting.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "205 Fairway",
+    "addressLocality": "Lexington",
+    "addressRegion": "NC",
+    "postalCode": "27292",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    {
+      "@type": "AdministrativeArea",
+      "name": "Central North Carolina"
     },
-    "telephone":"{{PHONE}}",
-    "email":"{{EMAIL}}",
-    "areaServed":[
-      {"@type":"City","name":"Lexington"},
-      {"@type":"AdministrativeArea","name":"Davidson County"}
-    ],
-    "description":"Managed IT services, cybersecurity, and Apple/Jamf device management for small and midsize businesses in Lexington, North Carolina.",
-    "sameAs":[]
-  }
+    {
+      "@type": "AdministrativeArea",
+      "name": "Davidson County"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Forsyth County"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Guilford County"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Rowan County"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Davie County"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Randolph County"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Iredell County"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Alamance County"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Rockingham County"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Stokes County"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Surry County"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Cabarrus County"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Yadkin County"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Stanly County"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Montgomery County"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Moore County"
+    }
+  ],
+  "description": "Managed IT services, cloud services, security, and business technology consulting for small to medium businesses in Central North Carolina."
+}
   </script>
 </head>
-
 <body>
 <header>
-  <div class="wrap">
-    <div class="topbar">
-      <div class="brand">
-        <div class="logo" aria-hidden="true"></div>
-        <div>
-          <strong>Bravener Consulting Service</strong>
-          <span>Managed IT • Cybersecurity • Apple/Jamf</span>
-        </div>
-      </div>
-      <nav aria-label="Primary">
-        <a href="/" aria-current="page">Home</a>
-        <a href="/managed-it-services-lexington-nc.html">Managed IT</a>
-        <a href="/cybersecurity-services-lexington-nc.html">Cybersecurity</a>
-        <a href="/apple-it-support-jamf-msp.html">Apple &amp; Jamf</a>
-        <a href="/cloud-server-it-support.html">Cloud &amp; Servers</a>
-        <a href="/about.html">About</a>
-        <a href="/contact.html">Contact</a>
-      </nav>
+  <div class="topbar">
+    <div><strong>Central NC IT Services</strong> • Central NC coverage: Davidson County, Forsyth County, Guilford County, Rowan County, Davie County, Randolph County, Iredell County, Alamance County, Rockingham County, Stokes County, Surry County, Cabarrus County, Yadkin County, Stanly County, Montgomery County, Moore County.</div>
+    <div>
+      <a href="tel:+12069544900">206-954-4900</a> •
+      <a href="mailto:info@bravenerconsulting.com">info@bravenerconsulting.com</a>
     </div>
   </div>
+  <nav>
+    <div class="brand">
+      <div class="logo" aria-hidden="true"></div>
+      <div>
+        <h1>Bravener Consulting Service</h1>
+        <small>Managed IT • Cloud • Security • Central North Carolina</small>
+      </div>
+    </div>
+    <div class="links" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="cloud.html">Cloud</a>
+      <a href="cybersecurity.html">Cybersecurity</a>
+      <a href="managed-it.html">Managed IT</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+  <section class="hero">
+    <div class="hero-grid">
+      <div>
+        <span class="pill">Serving Davidson & Forsyth + surrounding Central NC counties</span>
+        <h2>Managed IT Services in Central NC | Bravener Consulting Service</h2>
+        <p>Managed IT, cloud services, cybersecurity, and small business IT support serving Central North Carolina including Davidson County and Forsyth County.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="contact.html">Request a quote</a>
+          <a class="btn ghost" href="tel:+12069544900">Call 206-954-4900</a>
+        </div>
+        <div style="margin-top:14px">
+          <span class="pill">On-site & remote support • SMB-focused • Straightforward pricing</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Central NC Coverage</h3>
+        <p style="margin-bottom:10px; color: rgba(255,255,255,.74);">We support small to medium businesses across the Piedmont Triad and surrounding areas.</p>
+        <ul style="margin:10px 0 0 18px; color: rgba(255,255,255,.74);">
+          <li><strong>Primary:</strong> Davidson County, Forsyth County</li>
+          <li><strong>Also serving:</strong> Guilford, Rowan, Davie, Randolph, Iredell, Alamance, Rockingham, Stokes, Surry, Cabarrus, Yadkin, Stanly, Montgomery, Moore</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 </header>
 
 <main>
-  <div class="hero">
-    <div class="wrap">
-      <div class="hero-grid">
-        <div>
-          <h1>Managed IT Services &amp; Cybersecurity for Growing Businesses</h1>
-          <p>
-            Technology should help your business move faster — not slow you down. Bravener Consulting Service provides
-            proactive managed IT support, cybersecurity protection, and Apple/Jamf device management for small and midsize
-            organizations in <strong>Lexington, North Carolina</strong> and surrounding areas.
-          </p>
 
-          <div class="cta-row">
-            <a class="btn primary" href="/contact.html">Request a Consultation</a>
-            <a class="btn" href="tel:{{PHONE}}">Call {{PHONE}}</a>
-            <a class="btn" href="/managed-it-services-lexington-nc.html">Explore Managed IT</a>
-          </div>
+<div class="section-title">
+  <h2>Reliable IT for Central NC businesses</h2>
+  <p>From Davidson and Forsyth counties to the wider Piedmont Triad, we design, secure, and manage business technology that stays stable and scalable.</p>
+</div>
 
-          <div class="pill">Fast response</div>
-          <div class="pill">Proactive monitoring</div>
-          <div class="pill">Security-first</div>
-          <div class="pill">Apple/Jamf specialists</div>
-        </div>
-
-        <aside class="panel" aria-label="Service Highlights">
-          <h2>What we help with</h2>
-          <ul>
-            <li>IT support and helpdesk for employees</li>
-            <li>Network, server, and workstation management</li>
-            <li>Security hardening, patching, and monitoring</li>
-            <li>Backups and disaster recovery planning</li>
-            <li>Apple device management with Jamf</li>
-            <li>Cloud and Microsoft 365 support</li>
-          </ul>
-        </aside>
-      </div>
-
-      <div class="grid" aria-label="Primary services">
-        <div class="card">
-          <h3>Reliable IT Support</h3>
-          <p>Proactive monitoring, helpdesk support, and maintenance that reduces downtime and keeps teams productive.</p>
-          <p><a href="/managed-it-services-lexington-nc.html">Managed IT services →</a></p>
-        </div>
-        <div class="card">
-          <h3>Cybersecurity Protection</h3>
-          <p>Layered defenses to protect endpoints, email, networks, and critical business data from modern threats.</p>
-          <p><a href="/cybersecurity-services-lexington-nc.html">Cybersecurity services →</a></p>
-        </div>
-        <div class="card">
-          <h3>Apple &amp; Jamf Expertise</h3>
-          <p>Specialized support for Macs, iPhones, and iPads — with secure deployment and management using Jamf.</p>
-          <p><a href="/apple-it-support-jamf-msp.html">Apple &amp; Jamf services →</a></p>
-        </div>
-      </div>
-
-      <section>
-        <h2 class="section-title">Local IT Support in Lexington, North Carolina</h2>
-        <div class="two">
-          <div class="card">
-            <h3>Personal service, local partner</h3>
-            <p>
-              Working with a local IT provider means responsive support and guidance that fits how your business actually operates.
-              We serve Lexington and nearby communities with a focus on stability, security, and long-term IT planning.
-            </p>
-          </div>
-          <div class="card">
-            <h3>Designed for small &amp; midsize business</h3>
-            <p>
-              We help businesses standardize devices, simplify onboarding/offboarding, reduce security risk, and plan IT budgets.
-              Whether you need a full IT department or an expert partner for specific projects, we can help.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="callout">
-          <strong>Ready for dependable, secure IT support?</strong>
-          <div>
-            Let’s talk about your environment, priorities, and budget — and build a plan that keeps your business moving.
-          </div>
-          <div class="cta-row">
-            <a class="btn primary" href="/contact.html">Contact Us</a>
-            <a class="btn" href="mailto:{{EMAIL}}">Email {{EMAIL}}</a>
-          </div>
-        </div>
-      </section>
-    </div>
+<div class="grid">
+  <div class="card">
+    <div class="badge">Managed IT</div>
+    <h3 style="margin-top:10px;">Proactive support & monitoring</h3>
+    <p>Patch management, endpoint health, helpdesk response, and monthly reporting—built for small and medium businesses.</p>
   </div>
+  <div class="card">
+    <div class="badge">Cloud</div>
+    <h3 style="margin-top:10px;">Microsoft 365 & cloud migrations</h3>
+    <p>Email, identity, file sharing, backups, and secure remote work—implemented with clear documentation and best practices.</p>
+  </div>
+  <div class="card">
+    <div class="badge">Security</div>
+    <h3 style="margin-top:10px;">Defense-in-depth</h3>
+    <p>Security baselines, MFA, endpoint protection, vulnerability reduction, and user training for real-world threats.</p>
+  </div>
+</div>
+
+<div style="height:18px"></div>
+
+<div class="grid-2">
+  <div class="callout">
+    <h3 style="margin:0 0 8px;">Local coverage, responsive service</h3>
+    <p style="margin:0;">
+      Based in Lexington, NC, we provide on-site support across <strong>Davidson County</strong> and <strong>Forsyth County</strong>,
+      with regular service routes through Guilford, Rowan, Davie, Randolph, Iredell, Alamance, Rockingham, Stokes, Surry, Cabarrus, Yadkin, Stanly, Montgomery, and Moore.
+    </p>
+  </div>
+  <div class="callout">
+    <h3 style="margin:0 0 8px;">What we do</h3>
+    <p style="margin:0;">
+      Assess • Plan • Implement • Manage. We modernize networks, secure endpoints, standardize devices, and document everything so you can run your business confidently.
+    </p>
+  </div>
+</div>
+
+<div style="height:18px"></div>
+
+<div class="section-title">
+  <h2>Popular service packages</h2>
+  <p>Pick a starting point and we’ll tailor it to your environment, compliance needs, and growth plans.</p>
+</div>
+
+<div class="grid">
+  <div class="card">
+    <h3>Essential Managed IT</h3>
+    <p>Monitoring, patching, basic security baseline, and helpdesk for predictable day-to-day support.</p>
+  </div>
+  <div class="card">
+    <h3>Secure Business</h3>
+    <p>MFA + conditional access, endpoint security, backup validation, and policy alignment.</p>
+  </div>
+  <div class="card">
+    <h3>Cloud-Ready</h3>
+    <p>Microsoft 365 hardening, migration planning, identity cleanup, and secure remote work enablement.</p>
+  </div>
+</div>
+
+<div style="height:18px"></div>
+
+<div class="callout">
+  <h3 style="margin:0 0 6px;">Ready to talk?</h3>
+  <p style="margin:0;">Call <a href="tel:+12069544900">206-954-4900</a> or email <a href="mailto:info@bravenerconsulting.com">info@bravenerconsulting.com</a>. We’ll confirm your county, set expectations, and recommend the next best step.</p>
+</div>
+
 </main>
 
 <footer>
-  <div class="wrap">
-    <div class="footgrid">
-      <div>
-        <strong style="color:var(--green)">Bravener Consulting Service</strong><br />
-        205 Fairway, Lexington, NC 27292<br />
-        <a href="tel:{{PHONE}}">{{PHONE}}</a> • <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>
-        <div class="small" style="margin-top:10px;">
-          Managed IT Services • Cybersecurity • Apple/Jamf • Cloud &amp; Server Support
+  <div class="footer-inner">
+    <div>
+      <div style="display:flex; gap:10px; align-items:center; margin-bottom:8px;">
+        <div class="logo" aria-hidden="true" style="width:30px;height:30px;border-radius:12px;"></div>
+        <div>
+          <strong>Bravener Consulting Service</strong><br/>
+          <span style="color:rgba(255,255,255,.70)">Managed IT • Cloud • Security</span>
         </div>
       </div>
-      <div>
-        <div><a href="/managed-it-services-lexington-nc.html">Managed IT</a></div>
-        <div><a href="/cybersecurity-services-lexington-nc.html">Cybersecurity</a></div>
-        <div><a href="/apple-it-support-jamf-msp.html">Apple &amp; Jamf</a></div>
-        <div><a href="/cloud-server-it-support.html">Cloud &amp; Servers</a></div>
-        <div><a href="/about.html">About</a> • <a href="/contact.html">Contact</a></div>
+      <div style="margin:10px 0 8px; color:rgba(255,255,255,.74)">
+        <strong>Area coverage:</strong> Central North Carolina — Davidson County, Forsyth County, and surrounding counties including Guilford, Rowan, Davie, Randolph, Iredell, Alamance, Rockingham, Stokes, Surry, Cabarrus, Yadkin, Stanly, Montgomery, and Moore.
+      </div>
+      <div style="color:rgba(255,255,255,.74)"><strong>Address:</strong> 205 Fairway Lexington, NC 27292</div>
+    </div>
+    <div>
+      <div class="callout">
+        <div class="badge">Contact</div>
+        <div style="margin-top:8px;"><strong>Phone:</strong> <a href="tel:+12069544900">206-954-4900</a></div>
+        <div><strong>Email:</strong> <a href="mailto:info@bravenerconsulting.com">info@bravenerconsulting.com</a></div>
+        <div style="margin-top:10px; color:rgba(255,255,255,.74)"><strong>Business hours:</strong> Mon–Fri (by appointment) • Emergency support available for managed clients</div>
       </div>
     </div>
-    <div class="small" style="margin-top:16px;">© <span id="y"></span> Bravener Consulting Service. All rights reserved.</div>
   </div>
-  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <div class="fineprint">© 2026 Bravener Consulting Service. All rights reserved.</div>
 </footer>
 </body>
 </html>
