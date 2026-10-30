@@ -1,152 +1,368 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bravener Consulting offers expert Mac management services in the Charlotte, NC area, powered by Jamf Pro. We help businesses efficiently manage their Apple devices with ease.">
-    <meta name="keywords" content="Mac management, Jamf Pro, Apple device management, IT services Charlotte NC, Bravener Consulting">
-    <meta name="author" content="Bravener Consulting">
-    <title>Bravener Consulting</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        header {
-            background: linear-gradient(to right, #228B22, #006400);
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        header P {
-            font-size: 18px;
-        }
-        nav {
-            background-color: #333;
-            color: #fff;
-            padding: 15px 0;
-        }
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li {
-            margin: 0 20px;
-        }
-        nav ul li A {
-            color: #fff;
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: bold;
-        }
-        .hero {
-            background: url('https://source.unsplash.com/1200x600/?technology,teamwork') no-repeat center center;
-            background-size: cover;
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-        }
-        .hero h2 {
-            font-size: 36px;
-            margin: 0 0 20px;
-        }
-        .hero A {
-            background-color: #228B22;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 18px;
-        }
-        main {
-            padding: 40px 20px;
-        }
-        section {
-            margin: 20px 0;
-        }
-        .services, .testimonials {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .services h2, .testimonials h2 {
-            border-bottom: 2px solid #228B22;
-            display: inline-block;
-            margin-bottom: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 40px;
-        }
-        footer A {
-            color: #228B22;
-            text-decoration: none;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bravener Consulting Service LLC | Microsoft 365 Applications, Intune, Teams &amp; Power Apps | Lexington, NC</title>
+  <meta name="description" content="Bravener Consulting Service LLC designs and builds custom applications for and around Microsoft 365: Power Apps, Teams apps, Intune device management, Power Automate and more. Based in Lexington, North Carolina.">
+  <meta name="theme-color" content="#0b1220">
+  <meta property="og:title" content="Bravener Consulting Service LLC">
+  <meta property="og:description" content="Custom applications for and around Microsoft 365: Intune, Teams and Power Apps.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b1220'/%3E%3Cpath d='M9 7h8a5 5 0 0 1 3 9 5 5 0 0 1-3 9H9z' fill='%2331d0c3'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Bravener Consulting Service LLC",
+    "email": "sean@bravenerconsulting.com",
+    "telephone": "+1-206-954-4900",
+    "url": "https://bravenerconsulting.com/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Lexington",
+      "addressRegion": "NC",
+      "addressCountry": "US"
+    },
+    "description": "Custom applications for and around Microsoft 365: Power Apps, Teams apps, Intune and Power Automate."
+  }
+  </script>
 </head>
 <body>
-    <header>
-        <h1>Bravener Consulting</h1>
-        <P>Expert Mac Management Services in Charlotte, NC</P>
-    </header>
+  <a class="skip" href="#main">Skip to content</a>
 
-    <nav>
-        <ul>
-            <li><A href="#services">Services</A></li>
-            <li><A href="#testimonials">Testimonials</A></li>
-            <li><A href="#contact">Contact</A></li>
-        </ul>
-    </nav>
-
-    <div class="hero">
-        <h2>Efficient Apple Device Management</h2>
-        <P>Streamline your IT operations with our expert services.</P>
-        <A href="#contact">Get Started</A>
+  <header class="site-header" id="top">
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="Bravener Consulting Service LLC home">
+        <span class="brand-mark" aria-hidden="true">B</span>
+        <span class="brand-text">Bravener<small>Consulting Service LLC</small></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav-links" class="nav-links" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#intune">Intune</a>
+        <a href="#approach">Approach</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-small" href="#contact">Start a project</a>
+      </nav>
     </div>
+  </header>
 
-    <main>
-        <section id="services" class="services">
-            <h2>Our Services</h2>
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Microsoft 365 application consultancy</p>
+          <h1>We build the apps your Microsoft&nbsp;365 tenant is missing.</h1>
+          <p class="lead">Bravener Consulting Service LLC designs, builds and supports custom applications for and around Microsoft 365: Power Apps, Teams apps, Intune-managed device experiences, and the automation that ties them together.</p>
+          <div class="cta-row">
+            <a class="btn" href="#contact">Book a discovery call</a>
+            <a class="btn btn-ghost" href="#services">See what we build</a>
+          </div>
+          <ul class="chips" aria-label="Platforms">
+            <li>Power Apps</li>
+            <li>Microsoft Teams</li>
+            <li>Intune</li>
+            <li>Power Automate</li>
+            <li>SharePoint</li>
+            <li>Microsoft Graph</li>
+          </ul>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="card-stack">
+            <div class="mini mini-a">
+              <span class="dot"></span>
+              <strong>Power App</strong>
+              <em>Field inspection &rarr; Dataverse</em>
+            </div>
+            <div class="mini mini-b">
+              <span class="dot"></span>
+              <strong>Teams app</strong>
+              <em>Approvals in the channel</em>
+            </div>
+            <div class="mini mini-c">
+              <span class="dot"></span>
+              <strong>Intune</strong>
+              <em>Compliance &rarr; Conditional Access</em>
+            </div>
+            <svg class="links" viewBox="0 0 300 300" fill="none">
+              <path d="M70 60 C 150 60, 150 150, 230 150" />
+              <path d="M70 150 C 130 150, 130 240, 230 240" />
+              <path d="M230 150 C 270 150, 270 240, 230 240" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">What we do</p>
+          <h2>Applications for and around Microsoft 365</h2>
+          <p>Most organizations already pay for far more of Microsoft 365 than they use. We close the gap with purpose-built apps, integrations and policy, built on the platform you already own.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M8 9h8M8 13h5"/></svg>
+            </div>
+            <h3>Power Apps</h3>
+            <p>Canvas and model-driven apps that replace spreadsheets, paper forms and email chains with governed, mobile-ready tools.</p>
             <ul>
-                <li>Device enrollment and configuration</li>
-                <li>Mobile device management (MDM) with Jamf Pro</li>
-                <li>Patch management and software updates</li>
-                <li>Endpoint security and compliance</li>
-                <li>24/7 monitoring and support</li>
+              <li>Canvas &amp; model-driven apps</li>
+              <li>Dataverse data models and security roles</li>
+              <li>Custom connectors and Power Fx components</li>
+              <li>App rescue, performance tuning and ALM</li>
             </ul>
-        </section>
+          </article>
 
-        <section id="testimonials" class="testimonials">
-            <h2>What Our Clients Say</h2>
-            <blockquote>
-                "Bravener Consulting transformed our IT processes. Their expertise in Jamf Pro is second to none!" – Jane Doe, TechCorp
-            </blockquote>
-            <blockquote>
-                "Seamless Apple device integration and outstanding support. Highly recommend!" – John Smith, Innovate Inc.
-            </blockquote>
-        </section>
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 6a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3h-4l-5 4v-4H7a3 3 0 0 1-3-3z"/></svg>
+            </div>
+            <h3>Microsoft Teams apps</h3>
+            <p>Bring workflows to where people already collaborate: tabs, bots, message extensions and adaptive cards inside Teams.</p>
+            <ul>
+              <li>Tabs, bots and message extensions</li>
+              <li>Adaptive Cards and approvals</li>
+              <li>Power Apps embedded in Teams</li>
+              <li>Tenant app catalog packaging and rollout</li>
+            </ul>
+          </article>
 
-        <section id="contact" class="contact">
-            <h2>Contact Us</h2>
-            <P>Email us at <A href="mailto:Sean@bravenerconsulting.com">Sean@bravenerconsulting.com</A> or call us at <A href="tel:+12069544900">(206) 954-4900</A>.</P>
-        </section>
-    </main>
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/></svg>
+            </div>
+            <h3>Intune &amp; endpoint apps</h3>
+            <p>Device management that works for people, not just policy. Packaging, deployment and the in-house apps that run on managed devices.</p>
+            <ul>
+              <li>Win32, MSIX, iOS/iPadOS and Android app packaging</li>
+              <li>Compliance and configuration policy design</li>
+              <li>Autopilot and enrollment workflows</li>
+              <li>Remediation scripts and reporting</li>
+            </ul>
+          </article>
 
-    <footer>
-        <P>&copy; 2025 Bravener Consulting. All rights reserved. <A href="#">Privacy Policy</A> | <A href="#">Terms of Service</A></P>
-    </footer>
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M5 12h6l-2-3m2 3-2 3M13 6h6v12h-6"/></svg>
+            </div>
+            <h3>Power Automate &amp; integration</h3>
+            <p>Reliable flows and API integrations that connect Microsoft 365 to your line-of-business systems.</p>
+            <ul>
+              <li>Cloud and desktop flows</li>
+              <li>Microsoft Graph and REST integrations</li>
+              <li>Error handling, logging and alerting</li>
+              <li>Data migration and sync</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 7l8-4 8 4v10l-8 4-8-4z"/><path d="M4 7l8 4 8-4M12 11v10"/></svg>
+            </div>
+            <h3>SharePoint &amp; intranet</h3>
+            <p>Sites, lists and SPFx web parts that make information findable and give your apps a clean front door.</p>
+            <ul>
+              <li>SharePoint Online architecture</li>
+              <li>SPFx web parts and extensions</li>
+              <li>Document and records workflows</li>
+              <li>Permissions clean-up</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+            </div>
+            <h3>Governance &amp; security</h3>
+            <p>Guardrails that let makers move fast without putting data at risk.</p>
+            <ul>
+              <li>Power Platform environment strategy and DLP</li>
+              <li>Entra ID app registrations and permissions</li>
+              <li>Conditional Access aligned to Intune compliance</li>
+              <li>Documentation and admin hand-off</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTUNE SPOTLIGHT -->
+    <section id="intune" class="section section-dark">
+      <div class="wrap split">
+        <div>
+          <p class="eyebrow">Intune spotlight</p>
+          <h2>Managed devices, managed experience</h2>
+          <p>Intune is more than a policy engine. Paired with Power Apps and Teams, it becomes the backbone for device lifecycle apps your staff and IT team will actually use.</p>
+          <ul class="ticks">
+            <li>Self-service device request, swap and return apps built in Power Apps</li>
+            <li>Teams-based onboarding and offboarding checklists tied to enrollment</li>
+            <li>Custom compliance reporting beyond the built-in console views</li>
+            <li>Line-of-business app packaging with clean detection and update logic</li>
+          </ul>
+          <a class="btn" href="#contact">Talk to us about Intune</a>
+        </div>
+        <div class="panel" aria-label="Example device lifecycle flow">
+          <ol class="flow">
+            <li><span>1</span><div><strong>Request</strong><em>Employee submits a device request in a Power App</em></div></li>
+            <li><span>2</span><div><strong>Approve</strong><em>Manager approves with an adaptive card in Teams</em></div></li>
+            <li><span>3</span><div><strong>Provision</strong><em>Autopilot profile and Intune apps assigned automatically</em></div></li>
+            <li><span>4</span><div><strong>Verify</strong><em>Compliance state reported back to a dashboard</em></div></li>
+          </ol>
+          <p class="panel-note">Illustrative workflow. Every build is tailored to your tenant and licensing.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPROACH -->
+    <section id="approach" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">How we work</p>
+          <h2>A clear path from idea to production</h2>
+        </div>
+        <ol class="steps">
+          <li>
+            <span class="step-n">01</span>
+            <h3>Discover</h3>
+            <p>We map the process, the users and your tenant: licensing, security posture and existing automation.</p>
+          </li>
+          <li>
+            <span class="step-n">02</span>
+            <h3>Design</h3>
+            <p>Data model, user flow and governance decisions agreed up front, with a working prototype early.</p>
+          </li>
+          <li>
+            <span class="step-n">03</span>
+            <h3>Build</h3>
+            <p>Iterative delivery in your dev environment with source-controlled solutions and regular demos.</p>
+          </li>
+          <li>
+            <span class="step-n">04</span>
+            <h3>Deploy</h3>
+            <p>Managed releases through test to production, with Intune and Teams rollout handled end to end.</p>
+          </li>
+          <li>
+            <span class="step-n">05</span>
+            <h3>Support</h3>
+            <p>Documentation, training and optional ongoing support so your team owns what we build.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- WHY -->
+    <section class="section section-tint">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Why Bravener</p>
+          <h2>Built to last, built to hand over</h2>
+        </div>
+        <div class="grid grid-4">
+          <div class="why"><h3>Platform-native</h3><p>We use what is in your licenses first, so you avoid new vendors and extra cost.</p></div>
+          <div class="why"><h3>Security-minded</h3><p>Least-privilege permissions, DLP-aware design and clean Entra ID app registrations.</p></div>
+          <div class="why"><h3>Documented</h3><p>Every engagement ends with admin and maker documentation your team can use.</p></div>
+          <div class="why"><h3>Plain-spoken</h3><p>Fixed-scope options, honest estimates and no jargon-wrapped surprises.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="wrap narrow">
+        <div class="section-head">
+          <p class="eyebrow">FAQ</p>
+          <h2>Common questions</h2>
+        </div>
+        <details>
+          <summary>Which Microsoft 365 licenses do we need?</summary>
+          <p>It depends on the solution. Many Power Apps and Teams solutions work with standard Microsoft 365 licensing, while premium connectors, Dataverse capacity and some Intune features need additional licenses. We confirm licensing during discovery, before any build begins.</p>
+        </details>
+        <details>
+          <summary>Do you work in our tenant or yours?</summary>
+          <p>We build in your Power Platform development environment and tenant so you own the result. Access is granted with least-privilege roles and removed when the engagement ends.</p>
+        </details>
+        <details>
+          <summary>Can you take over an app someone else built?</summary>
+          <p>Yes. We audit existing Power Apps, flows and Teams apps for reliability, security and licensing exposure, then stabilize, refactor or rebuild as needed.</p>
+        </details>
+        <details>
+          <summary>Do you offer ongoing support?</summary>
+          <p>Yes. After launch we offer optional support and enhancement plans, or a clean hand-off to your internal team with training and documentation.</p>
+        </details>
+        <details>
+          <summary>How are projects priced?</summary>
+          <p>We offer fixed-scope projects for well-defined work and time-and-materials for exploratory or evolving efforts. Reach out for a scoped estimate.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-dark">
+      <div class="wrap split">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Tell us what you want to build</h2>
+          <p>Share a few details and we will reply within one business day to set up a discovery call.</p>
+          <ul class="contact-list">
+            <li><span>Email</span><a id="email-link" href="mailto:sean@bravenerconsulting.com">sean@bravenerconsulting.com</a></li>
+            <li><span>Phone</span><a href="tel:+12069544900">206-954-4900</a></li>
+            <li><span>Location</span>Lexington, North Carolina</li>
+          </ul>
+        </div>
+        <form id="contact-form" class="form" novalidate>
+          <label>Name
+            <input type="text" name="name" autocomplete="name" required>
+          </label>
+          <label>Work email
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+          <label>Company
+            <input type="text" name="company" autocomplete="organization">
+          </label>
+          <label>What do you need?
+            <select name="topic">
+              <option>Power Apps</option>
+              <option>Teams app</option>
+              <option>Intune</option>
+              <option>Power Automate / integration</option>
+              <option>Not sure yet</option>
+            </select>
+          </label>
+          <label>Project details
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button class="btn" type="submit">Send message</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap foot">
+      <div>
+        <strong>Bravener Consulting Service LLC</strong>
+        <p>Lexington, North Carolina &middot; <a href="tel:+12069544900">206-954-4900</a> &middot; <a href="mailto:sean@bravenerconsulting.com">sean@bravenerconsulting.com</a></p>
+        <p>&copy; <span id="year">2026</span> Bravener Consulting Service LLC. All rights reserved.</p>
+      </div>
+      <p class="disclaimer">Microsoft, Microsoft 365, Intune, Teams, Power Apps, Power Automate, SharePoint and Entra are trademarks of the Microsoft group of companies. Bravener Consulting Service LLC is an independent consultancy and is not affiliated with or endorsed by Microsoft.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
